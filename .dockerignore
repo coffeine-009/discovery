@@ -1,2 +1,2 @@
 #- Ignore SNAPSHOT jars -#
-build/libs/config-*-SNAPSHOT.jar
+build/libs/discovery-*-SNAPSHOT.jar
