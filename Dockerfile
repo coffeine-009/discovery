@@ -1,7 +1,11 @@
 #- Base image -#
 FROM java:8
 
-ADD build/libs/discovery-1.0.0.SNAPSHOT.jar /opt/discovery.jar
+# Author
+MAINTAINER TheCoffeine, Inc <vitaliy.tsutsman@musician-virtuoso.com>
 
+#- Default run command -#
 CMD ["java", "-jar", "/opt/discovery.jar"]
-#, "-Dspring.profiles.active=production"
+
+#- Add new application version -#
+ADD build/libs/discovery-*.jar /opt/discovery.jar
